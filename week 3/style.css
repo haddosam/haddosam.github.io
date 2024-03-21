@@ -1,0 +1,32 @@
+* {
+  font-family: "Afacad", sans-serif;
+  padding-left: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-bottom: 20px;
+  color: brown;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: chocolate;
+}
+
+p {
+  line-height: 1.4;
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  color: purple;
+}
