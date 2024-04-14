@@ -1,0 +1,67 @@
+/* The * selector has been used to set the font for everything to use the "Cabin" font and to bring all content in by 10px from the left of the page */
+* {
+  font-family: "Cabin", sans-serif;
+  margin-left: 10px;
+}
+
+/* This body selector make sure content does not touch the top or bottom of the webpage, giving the content space */
+body {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-right: 55%;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-left: 15px;
+  background-color: #cdf560;
+  box-shadow: 5px 5px black;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+
+.qna {
+  margin-left: 2%;
+  margin-right: 15%;
+  padding: 5px;
+  background-color: #ff8562;
+  box-shadow: 5px 5px black;
+}
+
+.questionnumber {
+  margin-right: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #6689e7;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  box-shadow: 5px 5px black;
+}
+
+.questions {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.answers {
+  padding-left: 35px;
+  padding-right: 150px;
+}
+
+/* I've selected the list items in my ordered list to have some space separation. By default, the text was quite close together. */
+ol li {
+  margin-bottom: 5px;
+}
