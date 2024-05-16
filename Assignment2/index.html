@@ -50,6 +50,27 @@
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
+          <!-- Container containing the volume slider input -->
+          <div class="volumeslidercontainer">
+            <input
+              id="volumeslider"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="100"
+            />
+          </div>
+          <!-- Volume on/off button used to mute the audio from the media player -->
+          <button id="volume-on-off-btn" onclick="toggleVolume()">
+            <img
+              id="volume-on-off-img"
+              src="images/volume-full.png"
+              alt="Volume Full"
+              width="24"
+              height="24"
+            />
+          </button>
         </div>
       </div>
 

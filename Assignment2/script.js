@@ -13,6 +13,9 @@ function togglePlayPause() {
     video.pause();
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
   }
+
+  var video = document.getElementById("custom-media-player");
+  var volume = document.getElementById("volumeslider");
 }
 function updateProgressBar() {
   const value = (video.currentTime / video.duration) * 100;
