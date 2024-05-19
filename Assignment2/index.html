@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Interactive Media Music Video</title>
     <!-- add the font family of your choice -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -12,19 +15,8 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Media Player Website</h1>
+      <h1>Music Video Viewer</h1>
     </header>
-
-    <!-- Navigation Section -->
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
-        <!-- Add or remove navigation items as needed -->
-      </ul>
-    </nav>
 
     <!-- Main Content Section -->
     <main class="container">
@@ -46,11 +38,12 @@
               height="24"
             />
           </button>
-          <!-- add the missing buttons or functionality here -->
+          <!-- Progress Bar -->
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
           <!-- Container containing the volume slider input -->
+          <!-- Note that the slider has a max level of 100 and a minimum of 0, like a volume bar. And every increment is worth 1-->
           <div class="volumeslidercontainer">
             <input
               id="volumeslider"
@@ -62,10 +55,11 @@
             />
           </div>
           <!-- Volume on/off button used to mute the audio from the media player -->
-          <button id="volume-on-off-btn" onclick="toggleVolume()">
+          <!-- I could have used local image files and given the directory path to them but to remain in line with the other parts of the code I used URL links to link to external images-->
+          <button id="volume-on-off-btn" onclick="muteUnmute()">
             <img
               id="volume-on-off-img"
-              src="images/volume-full.png"
+              src="https://img.icons8.com/ios-glyphs/30/high-volume--v2.png"
               alt="Volume Full"
               width="24"
               height="24"
@@ -74,21 +68,16 @@
         </div>
       </div>
 
-      <!-- Additional Content Section -->
-      <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
-    </main>
-
     <!-- Footer Section -->
+    <!-- As I have used more icons to further develop the page, I have consolidated the footer so that it is not too crowded with the icon credits-->
     <footer>
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+      <a href="https://icons8.com/icon/59862/play">Play</a>,
+      <a href="https://icons8.com/icon/61012/pause">Pause</a>,
+      <a href="https://icons8.com/icon/reqgj3e1uKBy/audio">Audio</a>, and
+      <a href="https://icons8.com/icon/91635/no-audio">No Audio</a> icons by
       <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com">Icons8</a>
+
     </footer>
   </body>
 </html>
