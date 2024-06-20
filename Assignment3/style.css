@@ -2,6 +2,7 @@ body {
   background-color: #2196f3;
 }
 
+/* This grid container class is the first one which contains the first 9 buttons in a 3 x 3 grid */
 .grid-container1 {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -9,6 +10,7 @@ body {
   padding: 10px;
 }
 
+/* This grid container class only contains the last two to keep them symmetrical in a 1 x 2 grid */
 .grid-container2 {
   display: grid;
   grid-template-columns: auto auto;
@@ -16,6 +18,7 @@ body {
   padding: 10px;
 }
 
+/* The styling for each button */
 .grid-item {
   margin: 30px;
   padding: 20px;
@@ -32,8 +35,14 @@ button {
   font-size: 18px;
   font-style: normal;
 }
-
+/* This hover effect gives the button a darker colour and changed the cursor when the user hovers over it */
+/* This helps to inform the user that the button can be pushed */
 button:hover {
   background-color: rgb(234, 234, 231);
   cursor: pointer;
+}
+/* This active paramter tells the button to darken the colour even more when it is pressed */
+/* This gives the user instant feedback to let them know they have pressed the button */
+button:active {
+  background-color: rgb(201, 201, 201);
 }
