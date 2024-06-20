@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 3</title>
+  </head>
+  <!-- Here is the list of all of the buttons that are clickable on the website -->
+  <!-- Every button has been created with an individual 'id' and 'onclick' function to individually target each button -->
+  <!-- The 'onclick' functions act as a way to call to javascript to initiate the function required for each button -->
+  <!-- All buttons but the last 2 have been organised into a 3 x 3 grid so that the look is symmetrical -->
+  <body>
+    <div class="grid-container1">
+      <div class="grid-item">
+        <button
+          class="drums"
+          id="drums&bass"
+          onclick="playAudio('drumBassAudio');"
+        >
+          Drums and Bass
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="drums"
+          id="drums&rhythm"
+          onclick="playAudio('drumRhythmAudio');"
+        >
+          Drums and Rhythm
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="drums"
+          id="drums&lead"
+          onclick="playAudio('drumLeadAudio');"
+        >
+          Drums and Lead
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="drums"
+          id="drumssolo"
+          onclick="playAudio('drumSoloAudio');"
+        >
+          Drums solo
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="rhythm"
+          id="rhythm&bass"
+          onclick="playAudio('rhythmBassAudio');"
+        >
+          Rhythm and Bass
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="rhythm"
+          id="rhythm&lead"
+          onclick="playAudio('rhythmLeadAudio');"
+        >
+          Rhythm and Lead
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="rhythm"
+          id="rhythmsolo"
+          onclick="playAudio('rhythmSoloAudio');"
+        >
+          Rhythm solo
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="lead"
+          id="lead&bass"
+          onclick="playAudio('leadBassAudio');"
+        >
+          Lead and Bass
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+          class="lead"
+          id="leadsolo"
+          onclick="playAudio('leadSoloAudio');"
+        >
+          Lead solo
+        </button>
+      </div>
+    </div>
+    <!-- This is the second div to keep the page symmetrical  -->
+    <div class="grid-container2">
+      <div class="grid-item">
+        <button id="basssolo" onclick="playAudio('bassSoloAudio');">
+          Bass solo
+        </button>
+      </div>
+      <div class="grid-item">
+        <button id="Everything" onclick="playAudio('everythingTogetherAudio');">
+          Everything
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
